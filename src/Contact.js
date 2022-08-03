@@ -5,6 +5,7 @@ export default function Contact() {
   return (
     <Container>
       <Form method='POST' name='contact'>
+        <input type='hidden' name='form-name' value='contact' />
         <Form.Group className='mb-3' controlId='email'>
           <Form.Label>Full Name</Form.Label>
           <Form.Control type='name' placeholder='John/Jane Doe' />
