@@ -6,17 +6,21 @@ export default function Contact() {
     <Container>
       <Form method='POST' name='contact'>
         <input type='hidden' name='form-name' value='contact' />
-        <Form.Group className='mb-3' controlId='name'>
+        <Form.Group className='mb-3'>
           <Form.Label>Full Name</Form.Label>
-          <Form.Control type='name' placeholder='John/Jane Doe' />
+          <Form.Control type='text' name='name' placeholder='John/Jane Doe' />
         </Form.Group>
-        <Form.Group className='mb-3' controlId='email'>
+        <Form.Group className='mb-3'>
           <Form.Label>Email Address</Form.Label>
-          <Form.Control type='email' placeholder='name@email.com' />
+          <Form.Control
+            type='email'
+            name='email'
+            placeholder='name@email.com'
+          />
         </Form.Group>
-        <Form.Group className='mb-3' controlId='message'>
+        <Form.Group className='mb-3'>
           <Form.Label>Message</Form.Label>
-          <Form.Control as='textarea' rows={3} />
+          <Form.Control as='textarea' name='message' rows={3} />
         </Form.Group>
 
         <Button variant='primary' type='submit'>
